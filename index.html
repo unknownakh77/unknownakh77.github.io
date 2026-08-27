@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Work Term Report — Security Analyst, KPMG | Syed Sinan Mansoor</title>
+<title>Work Term Report: Security Analyst, KPMG | Syed Sinan Mansoor</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -227,19 +227,32 @@
     color: var(--accent);
   }
 
-  /* ---------- Image placeholder ---------- */
-  .img-slot{
+  /* ---------- Images ---------- */
+  .img-grid{
     margin-top: 24px;
-    border: 1.5px dashed var(--rule);
-    border-radius: 10px;
-    padding: 40px 20px;
-    text-align: center;
-    font-family: var(--mono);
-    font-size: 12px;
-    color: var(--text-dim);
-    letter-spacing: 0.03em;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
   }
-  .img-slot strong{ display:block; color: var(--text-dim); font-size: 12.5px; margin-bottom: 4px; }
+  .img-grid figure{ margin: 0; }
+  .img-grid img{
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+    display: block;
+    border-radius: 10px;
+    border: 1px solid var(--rule);
+  }
+  .img-grid figcaption{
+    margin-top: 9px;
+    font-family: var(--mono);
+    font-size: 11.5px;
+    color: var(--text-dim);
+  }
+  @media (max-width: 640px){
+    .img-grid{ grid-template-columns: 1fr; }
+    .img-grid img{ height: 220px; }
+  }
 
   /* ---------- Footer ---------- */
   footer{
@@ -267,11 +280,11 @@
   <div class="wrap">
     <div class="eyebrow">Co-op Work Term Report</div>
     <h1 class="title">Security Analyst, <em>KPMG</em></h1>
-    <p class="subtitle">Four months inside a Big 4 cybersecurity practice — the tools, the tickets, and one AI project that outran 500 other interns.</p>
+    <p class="subtitle">Four months inside a Big 4 cybersecurity practice, covering the tools, the tickets, and one AI project that outran 500 other interns.</p>
     <div class="meta-row">
       <div>Student<span>Syed Sinan Mansoor</span></div>
-      <div>Program<span>B.Comp, Co-op — Cybersecurity Emphasis</span></div>
-      <div>Location<span>Toronto, ON</span></div>
+      <div>Program<span>B.Comp, Co-op, Cybersecurity Emphasis</span></div>
+      <div>Location<span>Greater Toronto Area (Remote)</span></div>
       <div>Term<span>Mar 2026 – Aug 2026</span></div>
     </div>
   </div>
@@ -282,20 +295,20 @@
   <!-- ABSTRACT -->
   <section>
     <div class="section-label">Abstract</div>
-    <p class="lede">This term I worked as a Security Analyst Intern on KPMG's Digital Security team in Toronto, helping secure the firm's own internal environment across a stack of enterprise security tools. What follows isn't a client debrief — it's a look at what the day-to-day of an internal security analyst actually involves, what I built on the side, and where my own goals held up against the reality of the work.</p>
+    <p class="lede">This term I worked as a Security Analyst Intern on KPMG's Digital Security team in the Greater Toronto Area, helping secure the firm's own internal environment across a stack of enterprise security tools. What follows isn't a client debrief. It's a look at what the day-to-day of an internal security analyst actually involves, what I built on the side, and where my own goals held up against the reality of the work.</p>
   </section>
 
   <!-- EMPLOYER -->
   <section>
     <div class="section-label">The Employer</div>
-    <h2>KPMG — Digital Security, ITS</h2>
-    <p>KPMG is one of the "Big 4" professional services firms. Rather than the client-facing Risk Services practice, I sat inside ITS (Information Technology Services) — the internal group responsible for securing KPMG's own environment, not its clients'. That distinction shaped the work: fewer client deliverables, more direct ownership of the firm's own security posture.</p>
+    <h2>KPMG: Digital Security, ITS</h2>
+    <p>KPMG is one of the "Big 4" professional services firms. Rather than the client-facing Risk Services practice, I sat inside ITS (Information Technology Services), the internal group responsible for securing KPMG's own environment, not its clients'. That distinction shaped the work, with fewer client deliverables and more direct ownership of the firm's own security posture.</p>
     <div class="employer-card">
-      <p>My term was based out of the Toronto office, working within the Digital Security team on internal detection, access, and endpoint security operations.</p>
+      <p>My term was primarily remote, working within the Digital Security team on internal detection, access, and endpoint security operations. I also visited both the Vaughan office and the downtown Toronto office over the course of the term for in-person collaboration.</p>
       <div class="facts">
         <div>Industry<strong>Professional Services</strong></div>
         <div>Practice<strong>Digital Security, ITS</strong></div>
-        <div>Office<strong>Toronto, ON</strong></div>
+        <div>Location<strong>Greater Toronto Area (Remote, with Vaughan &amp; Downtown Toronto office visits)</strong></div>
       </div>
     </div>
   </section>
@@ -327,7 +340,7 @@
         <div class="ticket-id">GOAL–03</div>
         <div class="ticket-body">
           <h3>Build something outside my assigned scope</h3>
-          <p>Wanted a self-directed project, not just assigned tickets — something that could stand on its own.</p>
+          <p>Wanted a self-directed project, not just assigned tickets, but something that could stand on its own.</p>
         </div>
         <div class="status resolved">RESOLVED</div>
       </div>
@@ -335,7 +348,7 @@
         <div class="ticket-id">GOAL–04</div>
         <div class="ticket-body">
           <h3>Get comfortable presenting findings to non-technical stakeholders</h3>
-          <p>Translating technical findings for people who don't live in the tooling is a core analyst skill — I got some of this, but less consistently than the technical side, since most of my term skewed toward hands-on detection and response work.</p>
+          <p>Translating technical findings for people who don't live in the tooling is a core analyst skill. I got some of this, but less consistently than the technical side, since most of my term skewed toward hands-on detection and response work.</p>
         </div>
         <div class="status partial">PARTIAL</div>
       </div>
@@ -354,7 +367,7 @@
       <span class="chip">ServiceNow</span>
     </div>
 
-    <p>Beyond that daily toolkit, I also got exposure to the platforms that sit around it in a mature security stack — Microsoft Sentinel for centralized detection, CyberArk for privileged access management, and Symantec DLP for data loss prevention. I didn't operate these day to day, but understanding how they connect to endpoint detection and vulnerability management filled in the bigger picture of how a security team's tools work together.</p>
+    <p>Beyond that daily toolkit, I also got exposure to the platforms that sit around it in a mature security stack, including Microsoft Sentinel for centralized detection, CyberArk for privileged access management, and Symantec DLP for data loss prevention. I didn't operate these day to day, but understanding how they connect to endpoint detection and vulnerability management filled in the bigger picture of how a security team's tools work together.</p>
 
     <div class="chip-row">
       <span class="chip">Microsoft Sentinel</span>
@@ -362,17 +375,23 @@
       <span class="chip">Symantec DLP</span>
     </div>
 
-    <p>The steepest part of the learning curve wasn't any single tool — it was the volume and pace. A university lab environment has one or two moving parts; an internal enterprise environment has dozens, and most of the actual skill is learning to prioritize signal under that load.</p>
+    <p>The steepest part of the learning curve wasn't any single tool. It was the volume and pace. A university lab environment has one or two moving parts, while an internal enterprise environment has dozens, and most of the actual skill is learning to prioritize signal under that load.</p>
 
     <div class="spotlight">
-      <h3>Omni Cortex — an AI productivity tool</h3>
-      <p>Alongside client work, I built Omni Cortex, an AI-powered productivity tool, and entered it into KPMG's internal AI Innovation Competition — open to interns across the firm.</p>
+      <h3>Omni Cortex: an AI productivity tool</h3>
+      <p>Alongside client work, I built Omni Cortex, an AI-powered productivity tool, and entered it into KPMG's internal AI Innovation Competition, open to interns across the firm.</p>
       <div class="result">RESULT → 1st place, out of 500+ interns</div>
     </div>
 
-    <div class="img-slot">
-      <strong>[ Add a screenshot here ]</strong>
-      Omni Cortex interface, a dashboard view, or a photo from the KPMG Toronto office
+    <div class="img-grid">
+      <figure>
+        <img src="kpmg-team.jpeg" alt="Team photo after winning KPMG's AI Innovation Competition">
+        <figcaption>With the team after the AI Innovation Competition results</figcaption>
+      </figure>
+      <figure>
+        <img src="kpmg-prize.jpeg" alt="AirPods Max, the prize for winning the AI Innovation Competition">
+        <figcaption>The prize for taking first place</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -380,7 +399,7 @@
   <section>
     <div class="section-label">Conclusion</div>
     <h2>What I'd want someone to remember</h2>
-    <p>If I had to sum up the term in one line: I went in wanting to see what security work looks like at real scale, and came out having built something that stood on its own against 500 other interns' ideas. The technical tools will keep changing — the instinct for triage, prioritization, and building something extra when there's room to, is what I'm taking into the next term.</p>
+    <p>If I had to sum up the term in one line: I went in wanting to see what security work looks like at real scale, and came out having built something that stood on its own against 500 other interns' ideas. The technical tools will keep changing, but the instinct for triage, prioritization, and building something extra when there's room to, is what I'm taking into the next term.</p>
   </section>
 
   <!-- ACKNOWLEDGMENTS -->
@@ -392,8 +411,8 @@
 </main>
 
 <footer class="wrap">
-  <span>Syed Sinan Mansoor — B.Comp Co-op, University of Guelph</span>
-  <span>Work Term Report — Summer 2026</span>
+  <span>Syed Sinan Mansoor, B.Comp Co-op, University of Guelph</span>
+  <span>Work Term Report, Summer 2026</span>
 </footer>
 
 </body>
